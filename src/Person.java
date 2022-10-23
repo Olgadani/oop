@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Person {
     int birth;
     String name;
@@ -10,17 +12,17 @@ public class Person {
         } else {
             this.birth = birth;
         }
-        if (name == "") {
+        if (name.equals("")) {
             System.out.println("Информация не указана");
         } else {
             this.name = name;
         }
-        if (town == "") {
+        if (town.equals("")) {
             System.out.println("Информация не указана");
         } else {
             this.town = town;
         }
-        if (job == "") {
+        if (job.equals("")) {
             System.out.println("Информация не указана");
         } else {
             this.job = job;
