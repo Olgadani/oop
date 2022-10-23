@@ -5,10 +5,27 @@ public class Person {
     String job;
 
     Person(String name, int birth, String town, String job) {
-        this.birth = birth;
-        this.name = name;
-        this.town = town;
-        this.job = job;
+        if (birth < 0) {
+            birth = 0;
+        } else {
+            this.birth = birth;
+        }
+        if (name == "") {
+            System.out.println("Информация не указана");
+        } else {
+            this.name = name;
+        }
+        if (town == "") {
+            System.out.println("Информация не указана");
+        } else {
+            this.town = town;
+        }
+        if (job == "") {
+            System.out.println("Информация не указана");
+        } else {
+            this.job = job;
+        }
+
     }
 
     public int getBirth() {
