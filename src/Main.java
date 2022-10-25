@@ -8,5 +8,9 @@ public class Main {
         any.printGreeting();
         kate.printGreeting();
         artem.printGreeting();
+        Person vladimir = new Person("Vladimir", 21, "Kazan", "");
+        vladimir.printGreeting();
+        Flower rose = new Flower("Роза обыкновенная", "Голландия", 35.59,0 );
+        System.out.println(rose);
     }
 }
